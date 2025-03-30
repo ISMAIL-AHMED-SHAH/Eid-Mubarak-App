@@ -73,8 +73,10 @@ st.sidebar.markdown("## 🕰️ Eid Countdown")
 st.sidebar.write(get_eid_countdown())
 
 # 🕰️ Digital Clock (Live Update)
+st.sidebar.markdown("---")
 st.sidebar.markdown("## ⏳ Current Time")
 clock_placeholder = st.sidebar.empty() 
+st.sidebar.markdown("---")
 
 # 🎉 Get User's Name for Personalized Greeting
 name = st.text_input("Enter Your Name or Your Loved One's Name to Send Eid Wishes:", "")
@@ -88,12 +90,23 @@ if st.button("Click for a Special Eid Greeting! 🎁"):
 # 🎆 Eid Image Banner
 st.image("eid-greet.png", caption="Eid Mubarak", use_container_width=True)
 
+st.sidebar.markdown("## ✨ Tips for Spreading Eid Joy!")
+st.sidebar.write("- Let go of past grievances and meet everyone with a smile. 😊")  
+st.sidebar.write("- Embrace your loved ones with a warm hug or handshake. 🤝")  
+st.sidebar.write("- Forgive and forget—Eid is about kindness and fresh beginnings. 💖")  
+st.sidebar.write("- Spread love, laughter, and happiness among family and friends. 🌸")  
+st.sidebar.markdown("---")
+
+# Footer
+st.sidebar.markdown("<p style='text-align: center; color: grey;'>Build with ❤️ By Ismail Ahmed Shah</p>", unsafe_allow_html=True)
+
 # 📬 Contact Section
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📬 Contact")
+
 st.sidebar.write("📧 [Email Us](mailto:ismailahmedshahpk@gmail.com)")
-st.sidebar.write("🔗 [LinkedIn](https://www.linkedin.com/in/ismail-ahmed-shah-2455b01ba/)")
-st.sidebar.write("💬 [WhatsApp](https://wa.me/923322241405)")
+st.sidebar.write("🔗 [Connect on LinkedIn](https://www.linkedin.com/in/ismail-ahmed-shah-2455b01ba/)")
+st.sidebar.write("💬 [Chat on WhatsApp](https://wa.me/923322241405)")
 
 # 🔄 **Real-time Digital Clock (Updates Every Second)**
 while True:
